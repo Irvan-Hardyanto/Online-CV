@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="main-container">
     <!-- <a href="#" class="logo">Logo</a>
         <ul>
           <li><a href="#">About Me</a></li>
@@ -14,6 +14,9 @@
 </template>
 
 <style>
+.main-container {
+  background-color: #546e7a !important;
+}
 /* div.container {
   padding: 10px;
 }

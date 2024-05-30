@@ -2,53 +2,53 @@
 import TopBar from "./TopBar.vue";
 import BaseLayout from "./BaseLayout.vue";
 </script>
-
 <template>
-  <BaseLayout>
-    <template v-slot:header>
-      <TopBar />
-    </template>
-
-    <template v-slot:content>
-      <div class="dashboard-container h-100">
+  <div class="dashboard-container h-100">
+    <v-card class="namecard rounded-lg elevation-10" color="grey-darken-3">
+      <v-card-item class="fill-height">
         <v-row>
           <v-col>
             <div class="col-wrapper">
-              <v-img
-                class="rounded-circle"
-                :width="200"
-                cover
-                src="../../public/pp.jpg"
-              ></v-img>
+              <img class="profile-picture" src="/pp.jpg" />
             </div>
           </v-col>
+          <v-divider vertical></v-divider>
           <v-col>
             <div class="col-wrapper">
-              <v-card
-                class="namecard rounded-lg elevation-10"
-                color="grey-darken-3"
-              >
-                <v-card-item>
-                  <div class="namecard-content">
-                    <p class="text-h1 hello">Hello</p>
-                    <p class="text-h4" style="margin-bottom: 10px">
-                      My Name Is
-                    </p>
-                    <div class="namecard-name">
-                      <h2>Irvan Hardyanto</h2>
-                    </div>
-                  </div>
-                </v-card-item>
-              </v-card>
+              <div class="namecard-content">
+                <p class="text-h1 hello">Hello</p>
+                <p class="text-h4" style="margin-bottom: 10px">My Name Is</p>
+                <div></div>
+                <div class="namecard-name">
+                  <h2>Irvan Hardyanto</h2>
+                </div>
+              </div>
             </div>
           </v-col>
         </v-row>
-      </div>
-    </template>
-  </BaseLayout>
+      </v-card-item>
+    </v-card>
+  </div>
 </template>
 
 <style scoped>
+.profile-picture {
+  width: 15em;
+  height: auto;
+  border-radius: 50%;
+}
+.dashboard-container {
+  height: 100vh;
+  /* padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+/* .namecard {
+  width: 80%;
+  height: 70%;
+}
 .col-wrapper {
   height: 100%;
   display: flex;
@@ -56,16 +56,10 @@ import BaseLayout from "./BaseLayout.vue";
   justify-content: center;
   align-items: center;
 }
-.dashboard-container {
-  padding: 10px;
-}
 .hello {
   text-align: center;
   font-family: "Montserrat", sans-serif !important;
   letter-spacing: 5px !important;
-}
-.namecard {
-  width: 25em;
 }
 .namecard-content {
   display: flex !important;
@@ -80,5 +74,5 @@ import BaseLayout from "./BaseLayout.vue";
   text-align: center;
   border-radius: 10px;
   font-size: x-large;
-}
+} */
 </style>
