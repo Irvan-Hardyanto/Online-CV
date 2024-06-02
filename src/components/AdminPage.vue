@@ -1,10 +1,5 @@
 <script setup>
-//the setup shorthand is only used on SFC(Single File Component)
-// const username = defineModel("username", {
-//   default: "",
-// });
-// const Password = defineModel("password", { default: "" });
-import { ref, computed, unref, reactive } from "vue";
+import { reactive } from "vue";
 import { useVuelidate } from "@vuelidate/core";
 import { required, helpers } from "@vuelidate/validators";
 
