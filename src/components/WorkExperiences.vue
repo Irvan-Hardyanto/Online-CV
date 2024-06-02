@@ -1,8 +1,3 @@
-<script setup>
-import TopBar from "./TopBar.vue";
-import BaseLayout from "./BaseLayout.vue";
-</script>
-
 <template v-slot:content>
   <div class="work-container h-100">
     <p class="text-h2 my-5 title">My Work Experiences</p>
